@@ -1,0 +1,42 @@
+<nav>
+  <div class="menu">
+    <a routerLink="/home" class="menu__logo">
+      <img
+        src="./assets/svg/icon-vo2vo.ai.svg"
+        class="menu__logo--img"
+        alt="vo2vo.ai Logo"
+      />
+      <span class="menu__logo--title">vo2vo.ai</span>
+    </a>
+    <div class="menu__navbar">
+      <ul class="menu__options">
+        <li>
+          <a routerLink="/home" routerLinkActive="active">
+            {{ "menu.home" | translate }}</a
+          >
+        </li>
+        <li>
+          <a routerLink="/about" routerLinkActive="active">
+            {{ "menu.about" | translate }}</a
+          >
+        </li>
+        <li>
+          <a routerLink="/services" routerLinkActive="active">
+            {{ "menu.services" | translate }}</a
+          >
+        </li>
+        <li>
+          <a routerLink="/pricing" routerLinkActive="active">
+            {{ "menu.pricing" | translate }}</a
+          >
+        </li>
+        <li>
+          <a routerLink="/contact" routerLinkActive="active">
+            {{ "menu.contact" | translate }}</a
+          >
+        </li>
+      </ul>
+      <app-lang></app-lang>
+    </div>
+  </div>
+</nav>

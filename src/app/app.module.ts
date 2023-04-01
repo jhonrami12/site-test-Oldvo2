@@ -7,20 +7,35 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarHomeComponent } from './components/navbar-home/navbar-home.component';
 import { WelcomeHomeComponent } from './components/welcome-home/welcome-home.component';
 import { HowWorksHomeComponent } from './components/how-works-home/how-works-home.component';
+import { NavbarModule } from './components/navbar/navbar.module';
+import { CustomLoader } from './shared/models/custom-loader';
+import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarHomeComponent,
     WelcomeHomeComponent,
-    HowWorksHomeComponent
+    HowWorksHomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    NavbarModule,
+    TranslateModule.forRoot({
+      defaultLanguage: 'en',
+      loader: {
+        provide: TranslateLoader,
+        useClass: CustomLoader,
+        deps: [HttpClient],
+      },
+    }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

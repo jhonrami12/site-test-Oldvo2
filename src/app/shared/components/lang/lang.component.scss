@@ -1,0 +1,48 @@
+.flag {
+  width: 1.6rem;
+  height: 1.1rem;
+
+  span {
+    color: var(--color-secondary);
+  }
+}
+
+.flex {
+  align-items: center;
+  gap: 5px;
+}
+
+.lang {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+
+::ng-deep {
+  .p-dropdown {
+    background-color: transparent;
+    border: none;
+    width: 85px;
+    color: var(--color-secondary);
+  }
+
+  .p-dropdown .p-dropdown-panel {
+    background-color: transparent;
+  }
+
+  .p-dropdown .p-dropdown-panel:hover {
+    background-color: transparent;
+  }
+
+  .p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight {
+    color: var(--color-secondary);
+    background: var(--color-main);
+  }
+
+  .p-dropdown-panel
+    .p-dropdown-items
+    .p-dropdown-item:not(.p-highlight):not(.p-disabled):hover {
+    color: white;
+    background: var(--color-secondary);
+  }
+}

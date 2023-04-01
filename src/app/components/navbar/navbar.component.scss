@@ -1,0 +1,46 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-main);
+  width: 100%;
+  padding: 1rem 0;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+
+    &--img {
+      height: 7rem;
+    }
+
+    &--title {
+      font-size: 2.4rem;
+      font-weight: 900;
+      color: var(--color-secondary);
+    }
+  }
+
+  &__navbar {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__options {
+    display: flex;
+    gap: 4rem;
+
+    li {
+      color: var(--color-secondary);
+    }
+
+    li:hover {
+      color: var(--color-white);
+    }
+  }
+}
+
+.active {
+  font-weight: 900;
+}
