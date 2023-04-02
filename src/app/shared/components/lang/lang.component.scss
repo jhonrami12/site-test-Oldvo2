@@ -22,27 +22,5 @@
   .p-dropdown {
     background-color: transparent;
     border: none;
-    width: 85px;
-    color: var(--color-secondary);
-  }
-
-  .p-dropdown .p-dropdown-panel {
-    background-color: transparent;
-  }
-
-  .p-dropdown .p-dropdown-panel:hover {
-    background-color: transparent;
-  }
-
-  .p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight {
-    color: var(--color-secondary);
-    background: var(--color-main);
-  }
-
-  .p-dropdown-panel
-    .p-dropdown-items
-    .p-dropdown-item:not(.p-highlight):not(.p-disabled):hover {
-    color: white;
-    background: var(--color-secondary);
   }
 }
