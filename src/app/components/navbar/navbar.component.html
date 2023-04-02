@@ -1,33 +1,100 @@
-<nav class="navbarparent">
+<nav class="navbar">
   <div class="menu">
     <a routerLink="/home" class="menu__logo">
-      <img src="./assets/svg/icon-vo2vo.ai.svg" class="menu__logo--img" alt="vo2vo.ai Logo" />
+      <img
+        src="./assets/svg/icon-vo2vo.ai.svg"
+        class="menu__logo--img"
+        alt="vo2vo.ai Logo"
+      />
       <span class="menu__logo--title">vo2vo.ai</span>
     </a>
     <div class="menu__navbar">
-      <ul class="menu__options">
+      <ul class="options">
         <li>
           <a routerLink="/home" routerLinkActive="active">
-            {{ "menu.home" | translate }}</a>
+            {{ "menu.home" | translate }}</a
+          >
         </li>
         <li>
           <a routerLink="/about" routerLinkActive="active">
-            {{ "menu.about" | translate }}</a>
+            {{ "menu.about" | translate }}</a
+          >
         </li>
         <li>
           <a routerLink="/services" routerLinkActive="active">
-            {{ "menu.services" | translate }}</a>
+            {{ "menu.services" | translate }}</a
+          >
         </li>
         <li>
           <a routerLink="/pricing" routerLinkActive="active">
-            {{ "menu.pricing" | translate }}</a>
+            {{ "menu.pricing" | translate }}</a
+          >
         </li>
         <li>
           <a routerLink="/contact" routerLinkActive="active">
-            {{ "menu.contact" | translate }}</a>
+            {{ "menu.contact" | translate }}</a
+          >
+        </li>
+        <li>
+          <a routerLink="/"> {{ "menu.login" | translate }}</a>
         </li>
       </ul>
       <app-lang></app-lang>
     </div>
   </div>
 </nav>
+
+<div class="menu">
+  <div class="menu__logo">
+    <p-button (click)="sidebarVisible = true" icon="pi pi-bars"></p-button>
+    <span class="menu__logo--title">vo2vo.ai</span>
+  </div>
+</div>
+
+<p-sidebar [(visible)]="sidebarVisible">
+  <ng-template pTemplate="header">
+    <a routerLink="/home" class="logo">
+      <img
+        src="./assets/svg/icon-vo2vo.ai.svg"
+        class="logo--img"
+        alt="vo2vo.ai Logo"
+      />
+      <span class="logo--title">vo2vo.ai</span>
+    </a>
+  </ng-template>
+  <ng-template pTemplate="content">
+    <div class="menu">
+      <ul class="options">
+        <li>
+          <a routerLink="/home" routerLinkActive="active">
+            {{ "menu.home" | translate }}</a
+          >
+        </li>
+        <li>
+          <a routerLink="/about" routerLinkActive="active">
+            {{ "menu.about" | translate }}</a
+          >
+        </li>
+        <li>
+          <a routerLink="/services" routerLinkActive="active">
+            {{ "menu.services" | translate }}</a
+          >
+        </li>
+        <li>
+          <a routerLink="/pricing" routerLinkActive="active">
+            {{ "menu.pricing" | translate }}</a
+          >
+        </li>
+        <li>
+          <a routerLink="/contact" routerLinkActive="active">
+            {{ "menu.contact" | translate }}</a
+          >
+        </li>
+        <li>
+          <a routerLink="/"> {{ "menu.login" | translate }}</a>
+        </li>
+      </ul>
+    </div>
+  </ng-template>
+  <!--<ng-template pTemplate="footer">Footer Content</ng-template>-->
+</p-sidebar>
