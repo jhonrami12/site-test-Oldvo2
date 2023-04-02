@@ -1,3 +1,10 @@
+.navbarparent {
+  position: fixed; 
+  top: 0px; 
+  z-index: 50; 
+  width: 100%;
+}
+
 .menu {
   display: flex;
   align-items: center;
