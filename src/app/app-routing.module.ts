@@ -4,32 +4,31 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () =>
-      import('./components/home/home.module').then((m) => m.HomeModule),
+    loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
   },
   {
     path: 'about',
     loadChildren: () =>
-      import('./components/about/about.module').then((m) => m.AboutModule),
+      import('./about/about.module').then((m) => m.AboutModule),
   },
   {
     path: 'services',
     loadChildren: () =>
-      import('./components/services/services.module').then(
+      import('./services/services.module').then(
         (m) => m.ServicesModule
       ),
   },
   {
     path: 'pricing',
     loadChildren: () =>
-      import('./components/pricing/pricing.module').then(
+      import('./pricing/pricing.module').then(
         (m) => m.PricingModule
       ),
   },
   {
     path: 'contact',
     loadChildren: () =>
-      import('./components/contact/contact.module').then(
+      import('./contact/contact.module').then(
         (m) => m.ContactModule
       ),
   },

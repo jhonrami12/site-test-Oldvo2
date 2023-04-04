@@ -4,17 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavbarHomeComponent } from './components/navbar-home/navbar-home.component';
-import { WelcomeHomeComponent } from './components/welcome-home/welcome-home.component';
-import { NavbarModule } from './components/navbar/navbar.module';
+import { NavbarModule } from './navbar/navbar.module';
 import { CustomLoader } from './shared/models/custom-loader';
 import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { FooterModule } from './components/footer/footer.module';
+import { FooterModule } from './footer/footer.module';
 
 @NgModule({
-  declarations: [AppComponent, NavbarHomeComponent, WelcomeHomeComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
