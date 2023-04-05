@@ -6,3 +6,98 @@
   line-height: 0;
   transform: rotate(180deg);
 }
+
+.sectionHome 
+{
+    background-color: transparent;
+
+    &__header {
+      position: relative;
+      overflow: hidden;
+
+      &__backgroudimg {
+          position: absolute;
+          width: 50%;
+          height: 50%;
+          z-index: -10;
+          top: 27%;
+          right: 7%;
+          background-image: url('/assets/img/robotWorking03.jpg');
+          background-size: contain;
+          background-position: center;
+      }
+
+      &__textAction
+      {
+        position: absolute;
+        top: 15%;
+        width: 92%;
+        padding-left: 1rem/* 16px */;
+        padding-right: 1rem/* 16px */;
+
+        &__title {
+          font-size: 1.875rem/* 30px */ !important;
+          line-height: 2.25rem/* 36px */ !important;
+          font-weight: 800 !important;
+        }
+
+        &__slogan {
+          width: 75%;
+          font-size: 1.125rem/* 18px */ !important;
+          line-height: 1.75rem/* 28px */ !important;
+          --tw-text-opacity: 1;
+          color: rgb(51 65 85 / var(--tw-text-opacity));          
+        }
+      }
+    }
+}
+
+@media (min-width: 640px) {
+  .sectionHome 
+  {
+    &__header { 
+      &__textAction {
+        top: 25%;
+        width: 58.34%;
+        &__title { 
+          font-size: 2.25rem/* 36px */ !important;
+          line-height: 2.5rem/* 40px */ !important;
+        }
+        &__slogan {
+          font-size: 1.25rem/* 20px */ !important;
+          line-height: 1.75rem/* 28px */ !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .sectionHome 
+  {
+    &__header { 
+      &__textAction {
+        padding-left: 2rem/* 32px */;
+        padding-right: 2rem/* 32px */;
+      }
+    }
+  }
+  
+}
+
+@media (min-width: 1024px) {
+  .sectionHome 
+  {
+    &__header { 
+      &__textAction {
+        padding-left: 3rem/* 48px */;
+        padding-right: 3rem/* 48px */;
+        &__title { 
+          font-size: 3.75rem/* 60px */ !important;
+          line-height: 1 !important;         
+        }
+      }
+    }
+  }
+}
+

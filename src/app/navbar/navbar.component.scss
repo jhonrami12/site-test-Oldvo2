@@ -7,6 +7,19 @@
   display: none;
 }
 
+.navbarMobile {
+  display: block;
+  position: fixed;
+  top: 0px;
+  z-index: 50;
+  width: 100%;
+  padding: 1px  
+}
+
+.fillspace {
+  height: 100px;
+}
+
 ::ng-deep {
   .p-sidebar {
     background-color: var(--color-main);
@@ -76,6 +89,7 @@
     gap: 2rem;
   }
 
+  
   .navbar {
     display: block;
     position: fixed;
@@ -84,6 +98,14 @@
     width: 100%;
   }
 
+  .navbarMobile {
+    display: none;
+  }
+
+  .fillspace {
+    height: 90px;
+  }
+  
   .menu {
     padding: 1rem 0;
 

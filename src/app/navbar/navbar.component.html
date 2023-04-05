@@ -43,14 +43,15 @@
     </div>
   </div>
 </nav>
-
+<div class="fillspace">sdf</div>
+<nav class="navbarMobile">
 <div class="menu">
   <div class="menu__logo">
     <p-button (click)="sidebarVisible = true" icon="pi pi-bars"></p-button>
     <span class="menu__logo--title">vo2vo.ai</span>
   </div>
 </div>
-
+</nav>
 <p-sidebar [(visible)]="sidebarVisible">
   <ng-template pTemplate="header">
     <a routerLink="/home" class="logo">
