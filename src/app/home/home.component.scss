@@ -1,55 +1,122 @@
 .shape-divider-bottom {
   position: absolute;
-  bottom: -2px;
+  bottom: 18px;
   left: 0;
-  width: 100%;  
+  width: 150%;  
   line-height: 0;
   transform: rotate(180deg);
 }
 
+::ng-deep .buttonGetStarted {
+
+    button
+    {
+        color: #FFFFFF;
+        background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+        --tw-gradient-from: #3b82f6 var(--tw-gradient-from-position);
+        --tw-gradient-from-position: ;
+        --tw-gradient-to: rgb(59 130 246 / 0)  var(--tw-gradient-from-position);
+        --tw-gradient-to-position:  ;
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+
+        --tw-gradient-via-position:  ;
+        --tw-gradient-to: rgb(37 99 235 / 0)  var(--tw-gradient-to-position);
+        --tw-gradient-to-position:  ;
+        --tw-gradient-stops: var(--tw-gradient-from), #2563eb var(--tw-gradient-via-position), var(--tw-gradient-to);
+
+        --tw-gradient-to: #1d4ed8 var(--tw-gradient-to-position);
+        --tw-gradient-to-position:  ;
+    }
+
+    span {
+      font-size: 10px;
+      padding: 2px;
+    }
+}
+
 .sectionHome 
 {
-    background-color: transparent;
+  background-color: transparent;  
 
-    &__header {
-      position: relative;
-      overflow: hidden;
+  &__header {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 
-      &__backgroudimg {
-          position: absolute;
-          width: 50%;
-          height: 50%;
-          z-index: -10;
-          top: 27%;
-          right: 7%;
-          background-image: url('/assets/img/robotWorking03.jpg');
-          background-size: contain;
-          background-position: center;
-      }
-
-      &__textAction
-      {
+    &__backgroudimg {
         position: absolute;
-        top: 15%;
-        width: 92%;
-        padding-left: 1rem/* 16px */;
-        padding-right: 1rem/* 16px */;
-
-        &__title {
-          font-size: 1.875rem/* 30px */ !important;
-          line-height: 2.25rem/* 36px */ !important;
-          font-weight: 800 !important;
-        }
-
-        &__slogan {
-          width: 75%;
-          font-size: 1.125rem/* 18px */ !important;
-          line-height: 1.75rem/* 28px */ !important;
-          --tw-text-opacity: 1;
-          color: rgb(51 65 85 / var(--tw-text-opacity));          
-        }
-      }
+        width: 45%;
+        height: 50%;
+        z-index: -10;
+        top: 25%;
+        right: 10%;
+        background-image: url('/assets/img/robotWorking03.jpg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
     }
+
+    &__textAction
+    {
+      position: absolute;
+      top: 15%;
+      width: 56%;
+      padding-left: 1rem/* 16px */;
+      padding-right: 1rem/* 16px */;
+      z-index: 12;
+
+      &__title {
+        font-size: 1.2rem/* 30px */ !important;
+        line-height: 2.25rem/* 36px */ !important;
+        font-weight: 800 !important;
+        margin-bottom: 3px;
+      }
+
+      &__slogan {
+        width: 75%;
+        margin-top: 0px;
+        margin-bottom: 4px;
+        font-size: 10px !important;
+        line-height: 1.75rem !important;
+        --tw-text-opacity: 1;
+        color: rgb(51 65 85 / var(--tw-text-opacity));          
+      }
+    }    
+  }
+}
+
+
+.sectionHowWork 
+{
+  width: 100%;  
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem/* 32px */;
+  padding-right: 2rem/* 32px */;  
+  padding-bottom: 1rem/* 16px */;
+  margin-left: auto;
+  margin-right: auto;
+  
+  > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+  }
+
+  &__pnlintro
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    &__video
+    {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+  }
 }
 
 @media (min-width: 640px) {
@@ -66,10 +133,22 @@
         &__slogan {
           font-size: 1.25rem/* 20px */ !important;
           line-height: 1.75rem/* 28px */ !important;
+          margin-bottom: 12px;
         }
       }
     }
   }
+  .sectionHowWork {
+    max-width: 640px;
+  }  
+
+  ::ng-deep .buttonGetStarted {
+    span {
+      font-size: 12px;
+      padding: 3px;
+    }
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -79,10 +158,28 @@
       &__textAction {
         padding-left: 2rem/* 32px */;
         padding-right: 2rem/* 32px */;
+
+        &__slogan {
+          font-size: 1.25rem/* 20px */ !important;
+          line-height: 1.75rem/* 28px */ !important;
+          margin-bottom: 18px;
+        }
+
       }
     }
   }
-  
+
+  .sectionHowWork {
+    max-width: 768px;
+  }
+
+  ::ng-deep .buttonGetStarted {
+    span {
+      font-size: 14px;
+      padding: 3px;
+    }
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -96,8 +193,40 @@
           font-size: 3.75rem/* 60px */ !important;
           line-height: 1 !important;         
         }
+
+        &__slogan {
+          font-size: 1.5rem/* 20px */ !important;
+          line-height: 1.75rem/* 28px */ !important;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  .sectionHowWork {
+    max-width: 1024px;
+    padding-top: 3rem/* 48px */;
+    padding-bottom: 3rem/* 48px */;
+    flex-direction: row;
+    align-items: center;
+
+    &__pnlintro
+    {
+      &__video
+      {
+        width: 50%;
+        
       }
     }
   }
 }
 
+@media (min-width: 1280px) {
+  .sectionHowWork {
+      max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  .sectionHowWork {
+      max-width: 1536px;
+  }
+}

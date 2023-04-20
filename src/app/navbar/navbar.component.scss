@@ -17,7 +17,7 @@
 }
 
 .fillspace {
-  height: 100px;
+  height: 70px;
 }
 
 ::ng-deep {
@@ -29,12 +29,13 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0rem;
 
   &--title {
     font-size: 1.6rem;
     font-weight: 900;
     color: var(--color-secondary);
+    font-family: var(--font-family-tittle)
   }
 }
 
@@ -42,7 +43,7 @@
   display: grid;
 
   li {
-    color: var(--color-secondary);
+    color: var(--color-secondary);    
   }
 
   li:hover {
@@ -56,17 +57,18 @@
   justify-content: space-between;
   background-color: var(--color-main);
   width: 100%;
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
 
   &__logo {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 0.5rem;
 
     &--title {
       font-size: 3.4rem;
-      font-weight: 900;
+      font-weight: 10;
       color: var(--color-secondary);
+      font-family: var(--font-family-tittle)
     }
   }
 
@@ -86,7 +88,15 @@
 @media (min-width: 768px) {
   .options {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
+    padding-left: 22px;
+    li {
+      color: var(--color-secondary);
+    }
+  
+    li:hover {
+      color: var(--color-white);
+    }
   }
 
   
@@ -103,7 +113,7 @@
   }
 
   .fillspace {
-    height: 90px;
+    height: 80px;
   }
   
   .menu {
@@ -117,13 +127,22 @@
       }
 
       &--title {
-        font-size: 2.4rem;
+        font-size: 3.4rem;
+        font-family: var(--font-family-tittle)
       }
     }
 
     &__navbar {
       display: flex;
       gap: 2rem;
+      align-items: center;
     }
+  }
+}
+
+@media (min-width: 948px) 
+{
+  .options {    
+    gap: 2rem;    
   }
 }
