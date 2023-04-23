@@ -3,14 +3,14 @@
     <div class="sectionHome__header__backgroudimg"></div>
     <object data="./assets/svg/shapes-window.svg"> </object>
     <div class="sectionHome__header__textAction">
-      <h1 class="sectionHome__header__textAction__title">Dubbing has never been easier</h1>
-      <p class="sectionHome__header__textAction__slogan">we make things possible for you.</p>
-      <p-button class="buttonGetStarted" label="Get Started"></p-button>
+      <h1 class="sectionHome__header__textAction__title">{{ "home.dubblingTitle" | translate }}</h1>
+      <p class="sectionHome__header__textAction__slogan">{{ "home.dubblingSlogan" | translate }}</p>
+      <p-button class="buttonGetStarted" label="">{{"home.getStarted" | translate }}</p-button>
     </div>
     <div class="shape-divider-bottom">
       <object data="./assets/svg/shape-divider-bottom.svg"> </object>
     </div>
-  </div>  
+  </div>
 </section>
 
 <section class="sectionHowWork">
@@ -19,5 +19,16 @@
       <source src="/assets/video/vo2vo_Intro.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
+    <div class="featureApp">
+      <span class="featureApp__title">{{ "home.feature_title" | translate }}</span>
+      <div class="featureApp__content">
+        <ul class="featureApp__content__list">
+          <li>{{ "home.feature_speaker_dect" | translate }}</li>
+          <li>{{ "home.feature_transcri_translate" | translate }}</li>
+          <li>{{ "home.feature_dubbling" | translate }}</li>
+          <li>{{ "home.feature_User-friendly" | translate }}</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>

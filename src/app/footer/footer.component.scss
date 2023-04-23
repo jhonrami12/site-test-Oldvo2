@@ -1,10 +1,150 @@
+.custom-shape-divider-bottom-1682267383 {
+  position: absolute;
+  top: -35px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1682267383 svg {
+  position: relative;
+  display: block;
+  width: calc(119% + 5px);
+  height: 37px;
+}
+
+.custom-shape-divider-bottom-1682267383 .shape-fill {
+  fill: #2D3963;
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  a {
+    background: #fff;
+    border-radius: 100%;
+    display: block;
+    height: 24px;
+    width: 24px;
+    text-align: center;    
+    margin: 10px;
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+  }
+  .linkenln:hover {
+    background: #0088CC;    
+    svg { 
+           fill: white;
+        }
+    } 
+  .instagram:hover {
+    background: rgb(201, 123, 188);
+    svg { 
+            fill: white;
+        }
+  }     
+    
+}
+
 .footer {
   background-color: var(--color-blue);
   padding: 3rem 0;
+  position: relative;
+  margin-top: 100px;
 
   &__container {
+    display: flex;
+    flex-direction: column;    
     max-width: 120rem;
     margin: 0 auto;
     width: 90%;
+    color: white;
+
+    &__title
+    {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5px;
+      span:first-child
+      {
+        font-size: 16px;
+        color: #5f99ff;        
+      }
+    }
+
+    &__body {
+      &__contactus {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+
+        span:nth-child(1n)
+        {
+          font-size: 24px;
+        }
+        img:nth-child(2n)
+        {
+          width: 60px;
+        }
+        span:nth-child(3n)
+        {
+          font-size: 16px;
+        }
+        span:nth-child(4n)
+        {
+          font-size: 14px;
+          color: #90794f;
+        }
+      }
+
+      &__followUs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+
+        span:first-child
+        {
+          font-size: 20px;
+        }
+      }
+    }
   }
+}
+
+@media (min-width: 640px) {
+  .footer {
+    &__container {
+      &__body {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        &__contactus {
+          padding-right: 40px;
+        }
+
+        &__followUs {
+          padding-left: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-shape-divider-bottom-1682267383 {    
+    top: -65px;    
+  }
+  
+  .custom-shape-divider-bottom-1682267383 svg {    
+    height: 67px;
+  }
+
 }

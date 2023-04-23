@@ -1,20 +1,16 @@
 <nav class="navbar">
   <div class="menu">
     <a routerLink="/home" class="menu__logo">
-      <img
-        src="./assets/svg/icon-vo2vo.ai.svg"
-        class="menu__logo--img"
-        alt="vo2vo.ai Logo"
-      />
+      <img src="./assets/svg/icon-vo2vo.ai.svg" class="menu__logo--img" alt="vo2vo.ai Logo" />
       <span class="menu__logo--title">Vo2vo.ai</span>
     </a>
     <div class="menu__navbar">
       <ul class="options">
         <li>
           <a routerLink="/home" routerLinkActive="active">
-            {{ "menu.home" | translate }}</a
-          >
+            {{ "menu.home" | translate }}</a>
         </li>
+        <!--
         <li>
           <a routerLink="/about" routerLinkActive="active">
             {{ "menu.about" | translate }}</a
@@ -38,6 +34,7 @@
         <li>
           <a routerLink="/"> {{ "menu.login" | translate }}</a>
         </li>
+        -->
       </ul>
       <app-lang></app-lang>
     </div>
@@ -45,21 +42,18 @@
 </nav>
 <div class="fillspace"></div>
 <nav class="navbarMobile">
-<div class="menu">
-  <div class="menu__logo">
-    <p-button (click)="sidebarVisible = true" icon="pi pi-bars"></p-button>
-    <span class="menu__logo--title">Vo2vo.ai</span>
-  </div>
-</div>
+  <div class="menu">
+    <div class="menu__logo">
+      <p-button (click)="sidebarVisible = true" icon="pi pi-bars"></p-button>
+      <span class="menu__logo--title">Vo2vo.ai</span>
+    </div>
+    <app-lang></app-lang>
+  </div>  
 </nav>
 <p-sidebar [(visible)]="sidebarVisible">
   <ng-template pTemplate="header">
     <a routerLink="/home" class="logo">
-      <img
-        src="./assets/svg/icon-vo2vo.ai.svg"
-        class="logo--img"
-        alt="vo2vo.ai Logo"
-      />
+      <img src="./assets/svg/icon-vo2vo.ai.svg" class="logo--img" alt="vo2vo.ai Logo" />
       <span class="logo--title">vo2vo.ai</span>
     </a>
   </ng-template>
@@ -68,9 +62,9 @@
       <ul class="options">
         <li>
           <a routerLink="/home" routerLinkActive="active">
-            {{ "menu.home" | translate }}</a
-          >
+            {{ "menu.home" | translate }}</a>
         </li>
+        <!--
         <li>
           <a routerLink="/about" routerLinkActive="active">
             {{ "menu.about" | translate }}</a
@@ -94,8 +88,9 @@
         <li>
           <a routerLink="/"> {{ "menu.login" | translate }}</a>
         </li>
-      </ul>
+        -->
+      </ul>      
     </div>
   </ng-template>
-  <!--<ng-template pTemplate="footer">Footer Content</ng-template>-->
+  <ng-template pTemplate="footer"> </ng-template>
 </p-sidebar>

@@ -6,5 +6,21 @@
     "pricing": "Pricing",
     "contact": "Contact",
     "login": "Login"
+  },
+  "home": {
+    "dubblingTitle": "Dubbing has never been easier",
+    "dubblingSlogan" : "We make things possible for you",
+    "getStarted": "Get Started",
+    "feature_title" : "AI-powered Automated Dubbing",
+    "feature_speaker_dect" : "Automatic Speaker Detection technology for precise dubbing.",
+    "feature_transcri_translate": "Automated Transcription and Translation to over 80+ languages.",
+    "feature_dubbling":"Automated Dubbing with natural-sounding voice.",
+    "feature_User-friendly":"User-friendly interface for easy navigation and use."
+  },
+  "footer" : {
+    "get-in-touch":"GET IN TOUCH",
+    "contactus":"Contact Us",
+    "email-addres":"E-mail Address",
+    "follow-us":"FOLLOW US"
   }
 }
