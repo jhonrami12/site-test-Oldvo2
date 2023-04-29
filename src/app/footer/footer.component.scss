@@ -117,6 +117,10 @@
           font-size: 20px;
           font-weight: bold;
         }
+        span:nth-child(3n)
+        {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -161,6 +165,10 @@
             font-size: 22px;
             font-weight: bold;
           }
+          span:nth-child(3n)
+          {
+            font-size: 16px;
+          }
         }
       }
     }
@@ -191,6 +199,10 @@
           {
             font-size: 24px;            
           }          
+          img:nth-child(2n)
+          {
+            width: 44px;
+          }     
           span:nth-child(3n)
           {
             font-size: 18px;
@@ -205,6 +217,10 @@
           span:first-child
           {
             font-size: 24px;
+          }
+          span:nth-child(3n)
+          {
+            font-size: 18px;
           }
         }
       }

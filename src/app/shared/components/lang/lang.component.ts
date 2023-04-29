@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Flag } from '../../models/flag.model';
+import { dataFlags } from '../../data/flag-supported';
 
 @Component({
   selector: 'app-lang',
@@ -8,20 +9,7 @@ import { Flag } from '../../models/flag.model';
   styleUrls: ['./lang.component.scss'],
 })
 export class LangComponent implements OnInit {
-  flags: Flag[] = [
-    {
-      id: 1,
-      title: 'Es',
-      name: 'es',
-      url: '../../assets/flags/spanish.gif',
-    },
-    {
-      id: 2,
-      title: 'En',
-      name: 'en',
-      url: '../../assets/flags/usa.gif',
-    },
-  ];
+  flags: Flag[] = dataFlags;
 
   flag: Flag;
   selectedCountry: string;
@@ -29,9 +17,9 @@ export class LangComponent implements OnInit {
   constructor(private translate: TranslateService) {}
 
   ngOnInit(): void {
-    this.flag = this.flags[1];
-    this.translate.setDefaultLang(this.flag.name);
-    this.translate.use(this.flag.name);
+    this.flag = this.flags.filter(
+      (flg) => flg.name == this.translate.currentLang
+    )[0];
   }
 
   select(event: any): void {
