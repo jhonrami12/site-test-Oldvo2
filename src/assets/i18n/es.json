@@ -17,10 +17,22 @@
     "feature_dubbling":"Doblaje automatizado con voz que suena natural.",
     "feature_User-friendly":"Interfaz fácil de usar para facilitar la navegación y el uso."
   },
+  "getStarted":{
+    "commingSoon" : "Muy Pronto!!",
+    "workingHard" : "Estamos trabajando arduamente para tener todo listo, te notificaremos tan pronto como esté disponible.",
+    "newsletter" : "Suscríbase a nuestro boletín para recibir actualizaciones sobre nuestro progreso:",
+    "email": "Correo Electronico:",
+    "subscribe" : "Suscribirse"
+  },
   "footer" : {
     "get-in-touch":"PONERSE EN CONTACTO",
     "contactus":"Contactanos",
     "email-addres":"Correo Electronico (E-mail)",
-    "follow-us":"SIGUENOS"
+    "follow-us":"Siguenos",
+    "languages":"Idioma"
+  },  
+  "languages": {
+    "En" : "Ingles",
+    "Es" : "Español"
   }
 }

@@ -1,11 +1,11 @@
 <section id="home" class="sectionHome">
   <div class="sectionHome__header">
     <div class="sectionHome__header__backgroudimg"></div>
-    <object data="./assets/svg/shapes-window.svg"> </object>
+    <object class="svgmain" data="./assets/svg/shapes-window.svg" type="image/svg+xml"> </object>
     <div class="sectionHome__header__textAction">
       <h1 class="sectionHome__header__textAction__title">{{ "home.dubblingTitle" | translate }}</h1>
       <p class="sectionHome__header__textAction__slogan">{{ "home.dubblingSlogan" | translate }}</p>
-      <p-button class="buttonGetStarted" label="">{{"home.getStarted" | translate }}</p-button>
+      <p-button class="buttonGetStarted" label="" (click)="show()">{{"home.getStarted" | translate }}</p-button>
     </div>
     <div class="shape-divider-bottom">
       <object data="./assets/svg/shape-divider-bottom.svg"> </object>

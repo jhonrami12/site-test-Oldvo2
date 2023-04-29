@@ -7,25 +7,51 @@
   }
 }
 
+.arrow 
+{
+  color: var(--color-secondary);
+}
+
 .flex {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.lang {
+.flex2 {
   display: flex;
-  justify-content: flex-end;
-  margin-right: 50px;
+  align-items: center;
+  gap: 5px;
+}
+
+.titleSelected {
+  color: var(--color-secondary);
+  font-size: 12px;
+}
+
+.titleItems {
+  width:100%;
+  font-size: 12px;
 }
 
 ::ng-deep {
   .p-dropdown {
-    background-color: transparent;
-    border: none;
+    background-color: transparent;    
+    border-radius: 0%;
   }
   .p-dropdown-trigger
   {
     display: none !important;
   }
+}
+
+@media (min-width: 768px) {
+  .titleSelected {   
+    font-size: 14px;
+  }
+
+  .titleItems {   
+    font-size: 14px;
+  }
+
 }

@@ -6,11 +6,12 @@
     </a>
     <div class="menu__navbar">
       <ul class="options">
+        <!--
         <li>
           <a routerLink="/home" routerLinkActive="active">
             {{ "menu.home" | translate }}</a>
         </li>
-        <!--
+        
         <li>
           <a routerLink="/about" routerLinkActive="active">
             {{ "menu.about" | translate }}</a
@@ -36,7 +37,6 @@
         </li>
         -->
       </ul>
-      <app-lang></app-lang>
     </div>
   </div>
 </nav>
@@ -47,8 +47,7 @@
       <p-button (click)="sidebarVisible = true" icon="pi pi-bars"></p-button>
       <span class="menu__logo--title">Vo2vo.ai</span>
     </div>
-    <app-lang></app-lang>
-  </div>  
+  </div>
 </nav>
 <p-sidebar [(visible)]="sidebarVisible">
   <ng-template pTemplate="header">
@@ -60,11 +59,11 @@
   <ng-template pTemplate="content">
     <div class="menu">
       <ul class="options">
+        <!--
         <li>
           <a routerLink="/home" routerLinkActive="active">
             {{ "menu.home" | translate }}</a>
-        </li>
-        <!--
+        </li>        
         <li>
           <a routerLink="/about" routerLinkActive="active">
             {{ "menu.about" | translate }}</a
@@ -89,7 +88,7 @@
           <a routerLink="/"> {{ "menu.login" | translate }}</a>
         </li>
         -->
-      </ul>      
+      </ul>
     </div>
   </ng-template>
   <ng-template pTemplate="footer"> </ng-template>

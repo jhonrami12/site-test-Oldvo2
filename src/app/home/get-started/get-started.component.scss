@@ -1,0 +1,169 @@
+::ng-deep .p-dialog-title
+{
+    width: 100%;
+    text-align: center;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: var(--color-secondary_variation);
+}
+
+::ng-deep .p-dialog .p-dialog-header
+{
+    background: var(--color-main)
+}
+
+::ng-deep .p-dialog-header-icon
+{
+    color: rgb(217, 217, 217) !important;
+}
+
+.getStartedClass {    
+    //font-family: var(--font-family-main);
+    text-align: center;    
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+
+    &__messageMain {
+        font-size: 12px;
+        text-align: justify;
+        color: #333;
+        padding: 10px;        
+        margin-top: 0px;
+        margin-bottom: 0px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+  
+  
+  .formGetStarted {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    &__email
+    {
+        font-size: 12px;
+        text-align: left;        
+    }
+
+    input[type="email"] {
+        padding: 10px;        
+        border: solid;
+        border-style: ridge;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 12px;
+      }
+      button[type="submit"] {
+        background-color: var(--color-main);
+        color: var(--color-secondary);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      button[type="submit"]:hover {
+        background-color: var(--color-main_variation);
+        color: var(--color-secondary_variation);
+      }
+  }
+
+@media (min-width: 640px) {
+    ::ng-deep .p-dialog-title
+    {
+        font-size: 16px !important;        
+    }
+
+    .getStartedClass {    
+        line-height: 1.4;
+    
+        &__messageMain {
+            font-size: 14px;
+        }
+      }      
+      
+    .formGetStarted {
+        &__email
+        {
+            font-size: 14px;
+        }
+    
+        input[type="email"] {
+            font-size: 14px;
+        }
+        
+        button[type="submit"] {            
+            font-size: 14px;            
+        }
+    }
+}
+  
+
+@media (min-width: 768px) {
+    ::ng-deep .p-dialog-title
+    {
+        font-size: 18px !important;        
+    }
+
+    .getStartedClass {    
+        line-height: 1.4;
+    
+        &__messageMain {
+            font-size: 18px;
+        }
+      }      
+      
+    .formGetStarted {
+        &__email
+        {
+            font-size: 15px;
+        }
+    
+        input[type="email"] {
+            font-size: 15px;
+        }
+        
+        button[type="submit"] {            
+            font-size: 15px;            
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    ::ng-deep .p-dialog-title
+    {
+        font-size: 24px !important;        
+    }
+
+    .getStartedClass {    
+        line-height: 1.4;
+    
+        &__messageMain {
+            font-size: 20px;
+        }
+      }      
+      
+    .formGetStarted {
+        &__email
+        {
+            font-size: 16px;
+        }
+    
+        input[type="email"] {
+            font-size: 16px;
+        }
+        
+        button[type="submit"] {            
+            font-size: 16px;            
+        }
+    }
+}

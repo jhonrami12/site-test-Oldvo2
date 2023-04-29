@@ -1,4 +1,4 @@
-{
+{  
   "menu": {
     "home": "Home",
     "about": "About",
@@ -17,10 +17,22 @@
     "feature_dubbling":"Automated Dubbing with natural-sounding voice.",
     "feature_User-friendly":"User-friendly interface for easy navigation and use."
   },
+  "getStarted":{
+    "commingSoon" : "Coming soon!!",
+    "workingHard" : "We're working hard to get everything ready, and we'll notify you as soon as it's available.",
+    "newsletter" : "Sign up for our newsletter to get updates on our progress:",
+    "email": "Email:",
+    "subscribe" : "Subscribe"
+  },
   "footer" : {
     "get-in-touch":"GET IN TOUCH",
     "contactus":"Contact Us",
     "email-addres":"E-mail Address",
-    "follow-us":"FOLLOW US"
+    "follow-us":"Follow Us",
+    "languages":"Language"
+  },
+  "languages": {
+    "En" : "English",
+    "Es" : "Spanish"
   }
 }

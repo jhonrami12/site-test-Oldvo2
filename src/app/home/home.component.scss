@@ -53,8 +53,7 @@
 
   &__content {
     width: 95%;
-    &__list{
-      font-family: cursive;
+    &__list{      
       font-size: 16px;
       li {
         list-style: disc;
@@ -97,20 +96,21 @@
       z-index: 12;
 
       &__title {
-        font-size: 1.5rem/* 30px */ !important;
+        font-size: 2.1rem/* 30px */ !important;
         line-height: 2.25rem/* 36px */ !important;
         font-weight: 800 !important;
         margin-bottom: 3px;
+        color: var(--color-white);
       }
 
       &__slogan {
         width: 75%;
         margin-top: 0px;
         margin-bottom: 4px;
-        font-size: 10px !important;
+        font-size: 12px !important;
         line-height: 1.75rem !important;
         --tw-text-opacity: 1;
-        color: rgb(51 65 85 / var(--tw-text-opacity));          
+        color: var(--color-secondary);
       }
     }    
   }
@@ -157,11 +157,11 @@
         top: 25%;
         width: 58.34%;
         &__title { 
-          font-size: 2.25rem/* 36px */ !important;
+          font-size: 3.1rem/* 36px */ !important;
           line-height: 2.5rem/* 40px */ !important;
         }
         &__slogan {
-          font-size: 1.25rem/* 20px */ !important;
+          font-size: 16px/* 20px */ !important;
           line-height: 1.75rem/* 28px */ !important;
           margin-bottom: 12px;
         }
@@ -192,9 +192,13 @@
       &__textAction {
         padding-left: 2rem/* 32px */;
         padding-right: 2rem/* 32px */;
-
+        
+        &__title { 
+          font-size: 3.8rem/* 36px */ !important;
+          line-height: 2.5rem/* 40px */ !important;
+        }
         &__slogan {
-          font-size: 1.25rem/* 20px */ !important;
+          font-size: 20px !important;
           line-height: 1.75rem/* 28px */ !important;
           margin-bottom: 18px;
         }
@@ -252,12 +256,12 @@
         padding-left: 3rem/* 48px */;
         padding-right: 3rem/* 48px */;
         &__title { 
-          font-size: 3.75rem/* 60px */ !important;
+          font-size: 4.5rem/* 60px */ !important;
           line-height: 1 !important;         
         }
 
         &__slogan {
-          font-size: 1.5rem/* 20px */ !important;
+          font-size: 22px !important;
           line-height: 1.75rem/* 28px */ !important;
           margin-bottom: 20px;
         }

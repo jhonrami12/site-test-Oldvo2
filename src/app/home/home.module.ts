@@ -6,6 +6,7 @@ import { CustomTranslateModule } from 'src/app/shared/modules/translate.module';
 import { LangModule } from '../shared/components/lang/lang.module';
 import { HomeComponent } from './home.component';
 import { NavbarModule } from '../navbar/navbar.module';
+import { GetStartedComponent } from './get-started/get-started.component';
 
 const routes: Routes = [
   {
@@ -15,7 +16,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [HomeComponent, GetStartedComponent],
   imports: [
     CommonModule,
     NavbarModule,
