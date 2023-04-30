@@ -8,15 +8,15 @@
 }
 
 .navbarMobile {
-  display: block;
-  position: fixed;
+  display: block;  
   top: 0px;
   z-index: 50;
   width: 100%;
-  padding: 1px  
+  padding: 0px  
 }
 
 .fillspace {
+  display: none;
   height: 70px;
 }
 
@@ -101,8 +101,7 @@
 
   
   .navbar {
-    display: block;
-    position: fixed;
+    display: block;    
     top: 0px;
     z-index: 50;
     width: 100%;
