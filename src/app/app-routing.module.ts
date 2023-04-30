@@ -3,10 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
   },
-  {
+  /*  {
     path: 'about',
     loadChildren: () =>
       import('./about/about.module').then((m) => m.AboutModule),
@@ -14,32 +14,27 @@ const routes: Routes = [
   {
     path: 'services',
     loadChildren: () =>
-      import('./services/services.module').then(
-        (m) => m.ServicesModule
-      ),
+      import('./services/services.module').then((m) => m.ServicesModule),
   },
   {
     path: 'pricing',
     loadChildren: () =>
-      import('./pricing/pricing.module').then(
-        (m) => m.PricingModule
-      ),
+      import('./pricing/pricing.module').then((m) => m.PricingModule),
   },
   {
     path: 'contact',
     loadChildren: () =>
-      import('./contact/contact.module').then(
-        (m) => m.ContactModule
-      ),
+      import('./contact/contact.module').then((m) => m.ContactModule),
   },
+*/
   {
     path: '',
-    redirectTo: '/home',
+    redirectTo: '/',
     pathMatch: 'full',
   },
   {
     path: '**',
-    redirectTo: '/home',
+    redirectTo: '/',
     pathMatch: 'full',
   },
 ];

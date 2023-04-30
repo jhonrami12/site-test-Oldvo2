@@ -149,6 +149,11 @@
   }
 }
 
+.featureApp__title
+{
+  font-weight: bold;
+}
+
 @media (min-width: 640px) {
   .sectionHome 
   {
@@ -182,8 +187,9 @@
       padding: 3px;
     }
   }
-
 }
+
+
 
 @media (min-width: 768px) {
   .sectionHome 

@@ -101,7 +101,7 @@
         span:nth-child(4n)
         {
           font-size: 14px;
-          color: #90794f;
+          color: var(--color-secondary);
         }
       }
 
@@ -153,8 +153,7 @@
           }
           span:nth-child(4n)
           {
-            font-size: 16px;
-            color: #90794f;
+            font-size: 16px;            
           }
         }
 
@@ -209,8 +208,7 @@
           }
           span:nth-child(4n)
           {
-            font-size: 18px;
-            color: #90794f;
+            font-size: 18px;            
           }
         }
         &__followUs {
