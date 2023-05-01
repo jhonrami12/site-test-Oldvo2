@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   URL_RESOURCES: '/assets/',
+  URL_TEST:'test',
 };
 
 /*

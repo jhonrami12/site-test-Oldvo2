@@ -44,7 +44,7 @@ export class HomeComponent implements AfterViewInit {
   }
 
   updateVideoSrc() {
-    console.log('urlResources:' + this.urlResources);
+    console.log('environment.URL_TEST:' + environment.URL_TEST);
     if (this.myVideo) {
       const lang = this.translateService.currentLang.toUpperCase();
       const videoSrc = `${this.urlResources}videos/vo2vo_${lang}.mp4`;
