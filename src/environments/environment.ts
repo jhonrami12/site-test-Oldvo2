@@ -4,8 +4,7 @@
 
 export const environment = {
   production: false,
-  URL_RESOURCES: '/assets/',
-  URL_TEST:'test',
+  URL_RESOURCES: '/assets/',  
 };
 
 /*
